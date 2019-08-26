@@ -207,9 +207,9 @@ cd /etc/openvpn/
 wget -O /etc/openvpn/1194-client.ovpn "https://raw.githubusercontent.com/00shadow00/ssh/master/open-vpn.conf"
 sed -i $MYIP2 /etc/openvpn/1194-client.ovpn;
 PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
-useradd -M -s /bin/false Radz
-echo "Radz:$PASS" | chpasswd
-echo "Radz" > pass.txt
+useradd -M -s /bin/false shadowchaser
+echo "00shadow00:$PASS" | chpasswd
+echo "shadowchaser" > pass.txt
 echo "$PASS" >> pass.txt
 tar cf client.tar 1194-client.ovpn pass.txt
 cp client.tar /home/vps/public_html/
@@ -347,7 +347,7 @@ refresh_pattern ^ftp: 1440 20% 10080
 refresh_pattern ^gopher: 1440 0% 1440
 refresh_pattern -i (/cgi-bin/|\?) 0 0% 0
 refresh_pattern . 0 20% 4320
-visible_hostname Radz
+visible_hostname shadowchaser
 END
 sed -i $MYIP2 /etc/squid/squid.conf;
 service squid restart
