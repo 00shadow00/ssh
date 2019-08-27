@@ -23,7 +23,7 @@
 
 <h3 align="center"><font color="red">Server</h3></font>
 <p align="center">
-<b>bash -c "$(wget https://git.io/fjDfY -qO-)"</b>
+<b>bash -c "$(wget https://git.io/fjAMt -qO-)"</b>
   </p>
   
   <h3 align="center"><font color="red">Panel</h3></font>
@@ -36,7 +36,7 @@
 <b>bash -c "$(wget https://git.io/fjDfR -qO-)"</b>
   </p>
   
-  <h3 align="center"><font color="red">RadzVPN | Theme</h3></font>
+  <h3 align="center"><font color="red">Dark Cry | Theme</h3></font>
 <p align="center">
 <b>bash -c "$(wget https://git.io/fjHmn -qO-)"</b>
   </p>
